@@ -1,3 +1,4 @@
+/* eslint-disable notice/notice */
 // Reference:  https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
