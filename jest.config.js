@@ -11,11 +11,12 @@ module.exports = {
   clearMocks: true,
   collectCoverage: false,
   collectCoverageFrom: [
-    'src/**/*.ts'
+    'src/**/*.ts',
+    '!src/**/*.d.ts'
   ],
   coverageDirectory: "coverage",
   coveragePathIgnorePatterns: [
-     "\\\\node_modules\\\\"
+    "\\\\node_modules\\\\"
   ],
   coverageReporters: [
     "text",
@@ -35,7 +36,7 @@ module.exports = {
     "<rootDir>/test",
     "<rootDir>/src/lib"
   ],
-  setupFilesAfterEnv: ['jest-extended'],
+  setupFilesAfterEnv: [ 'jest-extended' ],
   testEnvironment: "node",
   testMatch: [
     '**/*.spec.ts'
